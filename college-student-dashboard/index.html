@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NRI-NIAT | Student Dashboard – Sreegeshnuram</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== SIDEBAR NAVIGATION ========== -->
+  <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle-input" />
+
+  <aside class="sidebar">
+    <!-- Sidebar Header / Logo -->
+    <div class="sidebar-header">
+      <div class="college-logo">
+        <span class="logo-icon">🎓</span>
+        <div class="logo-text">
+          <span class="logo-title">NRI-NIAT</span>
+          <span class="logo-sub">Student Portal</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Mini Profile in Sidebar -->
+    <div class="sidebar-profile">
+      <div class="sidebar-avatar">
+        <img
+          src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sreegeshnuram&backgroundColor=b6e3f4"
+          alt="Sreegeshnuram Avatar"
+          onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'avatar-fallback\'>S</span>'"
+        />
+      </div>
+      <div class="sidebar-name">Sreegeshnuram</div>
+      <div class="sidebar-course">B.Tech · 1st Year</div>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="sidebar-nav" role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li>
+          <a href="#dashboard" class="nav-link active">
+            <span class="nav-icon">🏠</span>
+            <span class="nav-text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#profile" class="nav-link">
+            <span class="nav-icon">👤</span>
+            <span class="nav-text">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#attendance" class="nav-link">
+            <span class="nav-icon">📅</span>
+            <span class="nav-text">Attendance</span>
+          </a>
+        </li>
+        <li>
+          <a href="#marks" class="nav-link">
+            <span class="nav-icon">📊</span>
+            <span class="nav-text">Marks</span>
+          </a>
+        </li>
+        <li>
+          <a href="#timetable" class="nav-link">
+            <span class="nav-icon">🕐</span>
+            <span class="nav-text">Timetable</span>
+          </a>
+        </li>
+        <li>
+          <a href="#subjects" class="nav-link">
+            <span class="nav-icon">📚</span>
+            <span class="nav-text">Subjects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#notifications" class="nav-link">
+            <span class="nav-icon">🔔</span>
+            <span class="nav-text">Notifications</span>
+          </a>
+        </li>
+        <li>
+          <a href="#announcements" class="nav-link">
+            <span class="nav-icon">📢</span>
+            <span class="nav-text">Announcements</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Sidebar Footer -->
+    <div class="sidebar-footer">
+      <span>Academic Year 2024–25</span>
+    </div>
+  </aside>
+
+  <!-- ========== MAIN CONTENT AREA ========== -->
+  <main class="main-content">
+
+    <!-- Top Header Bar -->
+    <header class="top-header">
+      <label for="sidebar-toggle" class="hamburger" aria-label="Toggle Sidebar">
+        <span></span><span></span><span></span>
+      </label>
+      <div class="header-title">Student Dashboard</div>
+      <div class="header-right">
+        <div class="header-date">📅 Nov 24, 2026</div>
+        <div class="header-badge">1st Semester</div>
+      </div>
+    </header>
+
+    <!-- ==================== SECTION: DASHBOARD ==================== -->
+    <section id="dashboard" class="section">
+
+      <!-- Welcome Banner -->
+      <div class="welcome-banner">
+        <div class="welcome-text">
+          <h1>Welcome back, Sreegeshnuram! 👋</h1>
+          <p>Keep up the great work! Here's a quick overview of your academics at <strong>NRI-NIAT</strong>.</p>
+        </div>
+        <div class="welcome-illustration">🎓</div>
+      </div>
+
+      <!-- Dashboard Stats Cards -->
+      <div class="stats-grid">
+
+        <!-- Attendance Card -->
+        <div class="stat-card stat-attendance">
+          <div class="stat-icon">📅</div>
+          <div class="stat-info">
+            <span class="stat-value">82%</span>
+            <span class="stat-label">Attendance</span>
+          </div>
+          <div class="stat-badge good">Good</div>
+        </div>
+
+        <!-- Marks Card -->
+        <div class="stat-card stat-marks">
+          <div class="stat-icon">📊</div>
+          <div class="stat-info">
+            <span class="stat-value">74%</span>
+            <span class="stat-label">Avg. Marks</span>
+          </div>
+          <div class="stat-badge average">Average</div>
+        </div>
+
+        <!-- Subjects Card -->
+        <div class="stat-card stat-subjects">
+          <div class="stat-icon">📚</div>
+          <div class="stat-info">
+            <span class="stat-value">6</span>
+            <span class="stat-label">Total Subjects</span>
+          </div>
+          <div class="stat-badge info">Sem 1</div>
+        </div>
+
+        <!-- Semester Card -->
+        <div class="stat-card stat-semester">
+          <div class="stat-icon">🏫</div>
+          <div class="stat-info">
+            <span class="stat-value">1st</span>
+            <span class="stat-label">Semester</span>
+          </div>
+          <div class="stat-badge info">B.Tech</div>
+        </div>
+
+      </div>
+      <!-- /stats-grid -->
+
+    </section>
+    <!-- /dashboard -->
+
+    <!-- ==================== SECTION: PROFILE ==================== -->
+    <section id="profile" class="section">
+      <h2 class="section-title">👤 Student Profile</h2>
+
+      <div class="profile-card">
+        <!-- Left: Avatar -->
+        <div class="profile-avatar-wrap">
+          <div class="profile-avatar">
+            <img
+              src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sreegeshnuram&backgroundColor=b6e3f4"
+              alt="Student Profile Picture"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'avatar-fallback-lg\'>S</span>'"
+            />
+          </div>
+          <div class="profile-status">🟢 Active Student</div>
+        </div>
+
+        <!-- Right: Details -->
+        <div class="profile-details">
+          <h2 class="profile-name">Sreegeshnuram</h2>
+          <p class="profile-role">B.Tech Student · 1st Year</p>
+
+          <div class="profile-info-grid">
+            <div class="info-item">
+              <span class="info-label">🏫 University</span>
+              <span class="info-value">NRI – NIAT, Guntur</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📘 Course</span>
+              <span class="info-value">B.Tech (CSE)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📅 Year</span>
+              <span class="info-value">1st Year – Semester 1</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🎓 Batch</span>
+              <span class="info-value">2024 – 2028</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🆔 Roll No.</span>
+              <span class="info-value">24A91A0501</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📧 Email</span>
+              <span class="info-value">sreegeshnuram@niat.edu.in</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📍 Branch</span>
+              <span class="info-value">Computer Science &amp; Engineering</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📱 Phone</span>
+              <span class="info-value">+91 98765 43210</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /profile -->
+
+    <!-- ==================== SECTION: ATTENDANCE ==================== -->
+    <section id="attendance" class="section">
+      <h2 class="section-title">📅 Attendance Overview</h2>
+
+      <!-- Overall Circular Progress -->
+      <div class="attendance-layout">
+        <div class="circular-card">
+          <h3>Overall Attendance</h3>
+          <!-- CSS-only circular progress (82%) -->
+          <div class="circular-progress" style="--percentage: 295deg;">
+            <div class="circle-inner">
+              <span class="circle-value">82%</span>
+              <span class="circle-label">Attended</span>
+            </div>
+          </div>
+          <p class="attendance-note">✅ Above 75% minimum requirement</p>
+        </div>
+
+        <!-- Subject-wise Attendance -->
+        <div class="subject-attendance">
+          <h3>Subject-wise Attendance</h3>
+
+          <div class="attendance-bar-item">
+            <span class="bar-label">Mathematics – I</span>
+            <div class="bar-wrap">
+              <div class="bar-fill" style="width: 88%; background: #22c55e;"></div>
+            </div>
+            <span class="bar-pct">88%</span>
+          </div>
+
+          <div class="attendance-bar-item">
+            <span class="bar-label">Physics</span>
+            <div class="bar-wrap">
+              <div class="bar-fill" style="width: 75%; background: #3b82f6;"></div>
+            </div>
+            <span class="bar-pct">75%</span>
+          </div>
+
+          <div class="attendance-bar-item">
+            <span class="bar-label">Chemistry</span>
+            <div class="bar-wrap">
+              <div class="bar-fill" style="width: 80%; background: #8b5cf6;"></div>
+            </div>
+            <span class="bar-pct">80%</span>
+          </div>
+
+          <div class="attendance-bar-item">
+            <span class="bar-label">English Communication</span>
+            <div class="bar-wrap">
+              <div class="bar-fill" style="width: 92%; background: #22c55e;"></div>
+            </div>
+            <span class="bar-pct">92%</span>
+          </div>
+
+          <div class="attendance-bar-item">
+            <span class="bar-label">Programming in C</span>
+            <div class="bar-wrap">
+              <div class="bar-fill" style="width: 78%; background: #3b82f6;"></div>
+            </div>
+            <span class="bar-pct">78%</span>
+          </div>
+
+          <div class="attendance-bar-item">
+            <span class="bar-label">Engineering Drawing</span>
+            <div class="bar-wrap">
+              <div class="bar-fill" style="width: 70%; background: #f59e0b;"></div>
+            </div>
+            <span class="bar-pct">70%</span>
+          </div>
+
+        </div>
+      </div>
+      <!-- /attendance-layout -->
+
+      <!-- Attendance Summary Table -->
+      <div class="table-card">
+        <h3>Monthly Attendance Summary</h3>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>Classes Held</th>
+                <th>Classes Attended</th>
+                <th>Percentage</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>August 2024</td>
+                <td>22</td>
+                <td>20</td>
+                <td>91%</td>
+                <td><span class="badge-green">Excellent</span></td>
+              </tr>
+              <tr>
+                <td>September 2024</td>
+                <td>25</td>
+                <td>21</td>
+                <td>84%</td>
+                <td><span class="badge-green">Good</span></td>
+              </tr>
+              <tr>
+                <td>October 2024</td>
+                <td>26</td>
+                <td>20</td>
+                <td>77%</td>
+                <td><span class="badge-blue">Average</span></td>
+              </tr>
+              <tr>
+                <td>November 2024</td>
+                <td>18</td>
+                <td>13</td>
+                <td>72%</td>
+                <td><span class="badge-orange">Low</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+    <!-- /attendance -->
+
+    <!-- ==================== SECTION: MARKS ==================== -->
+    <section id="marks" class="section">
+      <h2 class="section-title">📊 Marks &amp; Academic Performance</h2>
+
+      <!-- Marks Cards Grid -->
+      <div class="marks-grid">
+
+        <div class="marks-card">
+          <div class="marks-subject">Mathematics – I</div>
+          <div class="marks-score-wrap">
+            <span class="marks-score">78</span>
+            <span class="marks-total">/ 100</span>
+          </div>
+          <div class="marks-bar">
+            <div class="marks-bar-fill" style="width: 78%; background: linear-gradient(90deg,#6366f1,#8b5cf6);"></div>
+          </div>
+          <span class="marks-grade grade-b">Grade: B+</span>
+        </div>
+
+        <div class="marks-card">
+          <div class="marks-subject">Physics</div>
+          <div class="marks-score-wrap">
+            <span class="marks-score">71</span>
+            <span class="marks-total">/ 100</span>
+          </div>
+          <div class="marks-bar">
+            <div class="marks-bar-fill" style="width: 71%; background: linear-gradient(90deg,#3b82f6,#06b6d4);"></div>
+          </div>
+          <span class="marks-grade grade-b">Grade: B</span>
+        </div>
+
+        <div class="marks-card">
+          <div class="marks-subject">Chemistry</div>
+          <div class="marks-score-wrap">
+            <span class="marks-score">68</span>
+            <span class="marks-total">/ 100</span>
+          </div>
+          <div class="marks-bar">
+            <div class="marks-bar-fill" style="width: 68%; background: linear-gradient(90deg,#f59e0b,#f97316);"></div>
+          </div>
+          <span class="marks-grade grade-c">Grade: C+</span>
+        </div>
+
+        <div class="marks-card">
+          <div class="marks-subject">English Communication</div>
+          <div class="marks-score-wrap">
+            <span class="marks-score">85</span>
+            <span class="marks-total">/ 100</span>
+          </div>
+          <div class="marks-bar">
+            <div class="marks-bar-fill" style="width: 85%; background: linear-gradient(90deg,#22c55e,#16a34a);"></div>
+          </div>
+          <span class="marks-grade grade-a">Grade: A</span>
+        </div>
+
+        <div class="marks-card">
+          <div class="marks-subject">Programming in C</div>
+          <div class="marks-score-wrap">
+            <span class="marks-score">80</span>
+            <span class="marks-total">/ 100</span>
+          </div>
+          <div class="marks-bar">
+            <div class="marks-bar-fill" style="width: 80%; background: linear-gradient(90deg,#6366f1,#8b5cf6);"></div>
+          </div>
+          <span class="marks-grade grade-a">Grade: A−</span>
+        </div>
+
+        <div class="marks-card">
+          <div class="marks-subject">Engineering Drawing</div>
+          <div class="marks-score-wrap">
+            <span class="marks-score">63</span>
+            <span class="marks-total">/ 100</span>
+          </div>
+          <div class="marks-bar">
+            <div class="marks-bar-fill" style="width: 63%; background: linear-gradient(90deg,#ef4444,#f97316);"></div>
+          </div>
+          <span class="marks-grade grade-c">Grade: C</span>
+        </div>
+
+      </div>
+      <!-- /marks-grid -->
+
+      <!-- Performance Summary Table -->
+      <div class="table-card">
+        <h3>Internal Assessment Summary (Mid-term)</h3>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Mid-1</th>
+                <th>Mid-2</th>
+                <th>Assignments</th>
+                <th>Total (/100)</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mathematics – I</td>
+                <td>38/50</td>
+                <td>40/50</td>
+                <td>18/20</td>
+                <td>78</td>
+                <td><span class="badge-blue">B+</span></td>
+              </tr>
+              <tr>
+                <td>Physics</td>
+                <td>35/50</td>
+                <td>36/50</td>
+                <td>15/20</td>
+                <td>71</td>
+                <td><span class="badge-blue">B</span></td>
+              </tr>
+              <tr>
+                <td>Chemistry</td>
+                <td>33/50</td>
+                <td>35/50</td>
+                <td>14/20</td>
+                <td>68</td>
+                <td><span class="badge-orange">C+</span></td>
+              </tr>
+              <tr>
+                <td>English Communication</td>
+                <td>42/50</td>
+                <td>43/50</td>
+                <td>19/20</td>
+                <td>85</td>
+                <td><span class="badge-green">A</span></td>
+              </tr>
+              <tr>
+                <td>Programming in C</td>
+                <td>40/50</td>
+                <td>40/50</td>
+                <td>18/20</td>
+                <td>80</td>
+                <td><span class="badge-green">A−</span></td>
+              </tr>
+              <tr>
+                <td>Engineering Drawing</td>
+                <td>30/50</td>
+                <td>33/50</td>
+                <td>13/20</td>
+                <td>63</td>
+                <td><span class="badge-orange">C</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="summary-row">
+          <div class="summary-item">
+            <span class="summary-label">Average Score</span>
+            <span class="summary-value">74.2 / 100</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">CGPA (Estimated)</span>
+            <span class="summary-value">7.4 / 10</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Rank in Class</span>
+            <span class="summary-value">12 / 60</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /marks -->
+
+    <!-- ==================== SECTION: TIMETABLE ==================== -->
+    <section id="timetable" class="section">
+      <h2 class="section-title">🕐 Weekly Class Timetable</h2>
+      <p class="section-sub">Semester 1 – B.Tech CSE · NRI-NIAT, Guntur</p>
+
+      <div class="table-card">
+        <div class="table-wrap">
+          <table class="timetable-table">
+            <thead>
+              <tr>
+                <th>Time \ Day</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time-cell">9:00 – 10:00</td>
+                <td class="tt-math">Mathematics</td>
+                <td class="tt-phy">Physics</td>
+                <td class="tt-math">Mathematics</td>
+                <td class="tt-chem">Chemistry</td>
+                <td class="tt-eng">English</td>
+                <td class="tt-prog">Programming</td>
+              </tr>
+              <tr>
+                <td class="time-cell">10:00 – 11:00</td>
+                <td class="tt-prog">Programming in C</td>
+                <td class="tt-math">Mathematics</td>
+                <td class="tt-phy">Physics</td>
+                <td class="tt-prog">Programming in C</td>
+                <td class="tt-math">Mathematics</td>
+                <td class="tt-draw">Eng. Drawing</td>
+              </tr>
+              <tr>
+                <td class="time-cell break-row" colspan="7">☕ Short Break – 11:00 to 11:15</td>
+              </tr>
+              <tr>
+                <td class="time-cell">11:15 – 12:15</td>
+                <td class="tt-eng">English Comm.</td>
+                <td class="tt-draw">Eng. Drawing</td>
+                <td class="tt-chem">Chemistry</td>
+                <td class="tt-phy">Physics</td>
+                <td class="tt-prog">Programming in C</td>
+                <td class="tt-math">Mathematics</td>
+              </tr>
+              <tr>
+                <td class="time-cell">12:15 – 1:15</td>
+                <td class="tt-phy">Physics</td>
+                <td class="tt-eng">English Comm.</td>
+                <td class="tt-prog">Programming in C</td>
+                <td class="tt-draw">Eng. Drawing</td>
+                <td class="tt-chem">Chemistry</td>
+                <td class="tt-eng">English</td>
+              </tr>
+              <tr>
+                <td class="time-cell break-row" colspan="7">🍽️ Lunch Break – 1:15 to 2:00</td>
+              </tr>
+              <tr>
+                <td class="time-cell">2:00 – 3:00</td>
+                <td class="tt-draw">Eng. Drawing Lab</td>
+                <td class="tt-chem">Chemistry Lab</td>
+                <td class="tt-eng">English Lab</td>
+                <td class="tt-math">Mathematics</td>
+                <td class="tt-phy">Physics Lab</td>
+                <td class="tt-free">Sports / Free</td>
+              </tr>
+              <tr>
+                <td class="time-cell">3:00 – 4:00</td>
+                <td class="tt-draw">Eng. Drawing Lab</td>
+                <td class="tt-chem">Chemistry Lab</td>
+                <td class="tt-prog">Programming Lab</td>
+                <td class="tt-free">Tutorial</td>
+                <td class="tt-phy">Physics Lab</td>
+                <td class="tt-free">Sports / Free</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Timetable Legend -->
+      <div class="legend-row">
+        <span class="legend-item tt-math">Mathematics</span>
+        <span class="legend-item tt-phy">Physics</span>
+        <span class="legend-item tt-chem">Chemistry</span>
+        <span class="legend-item tt-eng">English</span>
+        <span class="legend-item tt-prog">Programming</span>
+        <span class="legend-item tt-draw">Eng. Drawing</span>
+        <span class="legend-item tt-free">Free / Sports</span>
+      </div>
+    </section>
+    <!-- /timetable -->
+
+    <!-- ==================== SECTION: SUBJECTS ==================== -->
+    <section id="subjects" class="section">
+      <h2 class="section-title">📚 Subjects – Semester 1</h2>
+      <p class="section-sub">B.Tech CSE · NRI-NIAT · Academic Year 2024–25</p>
+
+      <div class="subjects-grid">
+
+        <div class="subject-card subject-math">
+          <div class="subject-icon">📐</div>
+          <div class="subject-info">
+            <h3>Mathematics – I</h3>
+            <p>Differential Calculus, Integral Calculus, Series &amp; Sequences</p>
+            <div class="subject-meta">
+              <span>📖 4 Credits</span>
+              <span>👨‍🏫 Dr. Ravi Kumar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-card subject-phy">
+          <div class="subject-icon">⚗️</div>
+          <div class="subject-info">
+            <h3>Engineering Physics</h3>
+            <p>Wave Optics, Modern Physics, Quantum Mechanics Basics</p>
+            <div class="subject-meta">
+              <span>📖 3 Credits</span>
+              <span>👨‍🏫 Prof. Suresh Rao</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-card subject-chem">
+          <div class="subject-icon">🧪</div>
+          <div class="subject-info">
+            <h3>Engineering Chemistry</h3>
+            <p>Electrochemistry, Polymers, Corrosion &amp; Water Treatment</p>
+            <div class="subject-meta">
+              <span>📖 3 Credits</span>
+              <span>👩‍🏫 Dr. Lakshmi Priya</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-card subject-eng">
+          <div class="subject-icon">💬</div>
+          <div class="subject-info">
+            <h3>English Communication</h3>
+            <p>Grammar, Technical Writing, Presentation Skills &amp; LSRW</p>
+            <div class="subject-meta">
+              <span>📖 2 Credits</span>
+              <span>👩‍🏫 Ms. Anitha Reddy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-card subject-prog">
+          <div class="subject-icon">💻</div>
+          <div class="subject-info">
+            <h3>Programming in C</h3>
+            <p>Basics, Loops, Functions, Arrays, Pointers &amp; File Handling</p>
+            <div class="subject-meta">
+              <span>📖 4 Credits</span>
+              <span>👨‍🏫 Mr. Venkat Rao</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="subject-card subject-draw">
+          <div class="subject-icon">📏</div>
+          <div class="subject-info">
+            <h3>Engineering Drawing</h3>
+            <p>Orthographic Projections, Isometric Views, CAD Basics</p>
+            <div class="subject-meta">
+              <span>📖 2 Credits</span>
+              <span>👨‍🏫 Prof. Ajay Sharma</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /subjects-grid -->
+
+      <!-- Credits Summary -->
+      <div class="credits-summary">
+        <div class="credits-item">
+          <span class="credits-num">6</span>
+          <span class="credits-lbl">Total Subjects</span>
+        </div>
+        <div class="credits-item">
+          <span class="credits-num">18</span>
+          <span class="credits-lbl">Total Credits</span>
+        </div>
+        <div class="credits-item">
+          <span class="credits-num">3</span>
+          <span class="credits-lbl">Lab Subjects</span>
+        </div>
+        <div class="credits-item">
+          <span class="credits-num">1st</span>
+          <span class="credits-lbl">Semester</span>
+        </div>
+      </div>
+
+    </section>
+    <!-- /subjects -->
+
+    <!-- ==================== SECTION: NOTIFICATIONS ==================== -->
+    <section id="notifications" class="section">
+      <h2 class="section-title">🔔 Notifications &amp; Assignment Reminders</h2>
+
+      <div class="notifications-grid">
+
+        <!-- Assignment Reminders -->
+        <div class="notif-column">
+          <h3 class="notif-col-title">📝 Assignment Reminders</h3>
+
+          <div class="notif-card notif-urgent">
+            <div class="notif-icon">⚠️</div>
+            <div class="notif-body">
+              <div class="notif-title">Programming in C – Lab Report</div>
+              <div class="notif-desc">Submit the linked list implementation report.</div>
+              <div class="notif-due">Due: <strong>Nov 25, 2024</strong></div>
+            </div>
+            <span class="notif-tag tag-red">Urgent</span>
+          </div>
+
+          <div class="notif-card notif-normal">
+            <div class="notif-icon">📐</div>
+            <div class="notif-body">
+              <div class="notif-title">Mathematics – Assignment 3</div>
+              <div class="notif-desc">Complete problems on Integration techniques.</div>
+              <div class="notif-due">Due: <strong>Nov 28, 2024</strong></div>
+            </div>
+            <span class="notif-tag tag-blue">Upcoming</span>
+          </div>
+
+          <div class="notif-card notif-normal">
+            <div class="notif-icon">🧪</div>
+            <div class="notif-body">
+              <div class="notif-title">Chemistry Lab Record</div>
+              <div class="notif-desc">Submit the completed chemistry lab record book.</div>
+              <div class="notif-due">Due: <strong>Dec 2, 2024</strong></div>
+            </div>
+            <span class="notif-tag tag-blue">Upcoming</span>
+          </div>
+
+          <div class="notif-card notif-done">
+            <div class="notif-icon">✅</div>
+            <div class="notif-body">
+              <div class="notif-title">English – Essay Submission</div>
+              <div class="notif-desc">Essay on "Technology in Education" submitted.</div>
+              <div class="notif-due">Submitted: <strong>Nov 20, 2024</strong></div>
+            </div>
+            <span class="notif-tag tag-green">Done</span>
+          </div>
+
+        </div>
+
+        <!-- Reminders & Alerts -->
+        <div class="notif-column">
+          <h3 class="notif-col-title">📌 Reminders &amp; Alerts</h3>
+
+          <div class="notif-card notif-urgent">
+            <div class="notif-icon">📝</div>
+            <div class="notif-body">
+              <div class="notif-title">Mid-Term Exam Schedule Released</div>
+              <div class="notif-desc">Check the exam timetable on the university portal.</div>
+              <div class="notif-due">Date: <strong>Dec 5–10, 2024</strong></div>
+            </div>
+            <span class="notif-tag tag-red">Important</span>
+          </div>
+
+          <div class="notif-card notif-normal">
+            <div class="notif-icon">📅</div>
+            <div class="notif-body">
+              <div class="notif-title">Attendance Shortage Warning</div>
+              <div class="notif-desc">Engineering Drawing attendance is at 70%. Attend all classes.</div>
+              <div class="notif-due">Action Required: <strong>Immediately</strong></div>
+            </div>
+            <span class="notif-tag tag-orange">Warning</span>
+          </div>
+
+          <div class="notif-card notif-normal">
+            <div class="notif-icon">🏆</div>
+            <div class="notif-body">
+              <div class="notif-title">Hackathon Registration Open</div>
+              <div class="notif-desc">NRI-NIAT InnoHack 2024 – Register before Nov 30.</div>
+              <div class="notif-due">Deadline: <strong>Nov 30, 2024</strong></div>
+            </div>
+            <span class="notif-tag tag-purple">Event</span>
+          </div>
+
+          <div class="notif-card notif-normal">
+            <div class="notif-icon">📚</div>
+            <div class="notif-body">
+              <div class="notif-title">Library Books Due</div>
+              <div class="notif-desc">Return "Let Us C" and "Physics Vol 1" to the library.</div>
+              <div class="notif-due">Due: <strong>Nov 27, 2024</strong></div>
+            </div>
+            <span class="notif-tag tag-blue">Reminder</span>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /notifications-grid -->
+    </section>
+    <!-- /notifications -->
+
+    <!-- ==================== SECTION: ANNOUNCEMENTS ==================== -->
+    <section id="announcements" class="section">
+      <h2 class="section-title">📢 College Announcements</h2>
+
+      <div class="announcements-list">
+
+        <div class="announcement-card ann-purple">
+          <div class="ann-date">Nov 24, 2024</div>
+          <div class="ann-content">
+            <h3>🎉 College Annual Day – Dec 15, 2024</h3>
+            <p>All students are requested to register for annual day cultural events by December 5th. Contact the Cultural Committee for details.</p>
+            <span class="ann-tag">Cultural</span>
+          </div>
+        </div>
+
+        <div class="announcement-card ann-blue">
+          <div class="ann-date">Nov 22, 2024</div>
+          <div class="ann-content">
+            <h3>📚 Semester Mid-Term Exam Timetable</h3>
+            <p>The mid-term examinations for Semester 1 will be held from December 5–10, 2024. Hall tickets will be distributed by November 30th.</p>
+            <span class="ann-tag">Academics</span>
+          </div>
+        </div>
+
+        <div class="announcement-card ann-green">
+          <div class="ann-date">Nov 20, 2024</div>
+          <div class="ann-content">
+            <h3>🏆 NRI-NIAT InnoHack 2024</h3>
+            <p>Registrations are open for the annual hackathon. 1st year students are encouraged to participate in the "Beginner Track". Prize pool: ₹50,000.</p>
+            <span class="ann-tag">Tech Event</span>
+          </div>
+        </div>
+
+        <div class="announcement-card ann-orange">
+          <div class="ann-date">Nov 18, 2024</div>
+          <div class="ann-content">
+            <h3>🏋️ Sports Week – Nov 25–30, 2024</h3>
+            <p>Inter-department sports competition. Register your team in Cricket, Basketball, Badminton and Chess. Contact the Sports Coordinator.</p>
+            <span class="ann-tag">Sports</span>
+          </div>
+        </div>
+
+        <div class="announcement-card ann-purple">
+          <div class="ann-date">Nov 15, 2024</div>
+          <div class="ann-content">
+            <h3>💡 Guest Lecture – AI &amp; ML Trends</h3>
+            <p>A guest lecture by Mr. Ramesh Babu (Google Engineer) on "Future of AI in Engineering" on November 28th at the Main Auditorium. Attendance mandatory.</p>
+            <span class="ann-tag">Lecture</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /announcements -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-logo">🎓 NRI – NIAT</span>
+          <span>NRI Institute of Technology (Autonomous), Guntur, Andhra Pradesh</span>
+        </div>
+        <div class="footer-center">
+          <strong>Sreegeshnuram</strong><br />
+          B.Tech CSE · 1st Year · Roll: 24A91A0501
+        </div>
+        <div class="footer-right">
+          <span>Academic Year 2024–25</span><br />
+          <span>Semester 1</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 NRI-NIAT Student Dashboard · Designed for B.Tech 1st Year · Sreegeshnuram</p>
+      </div>
+    </footer>
+
+  </main>
+  <!-- /main-content -->
+
+</body>
+</html>
